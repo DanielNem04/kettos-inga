@@ -1,0 +1,30 @@
+Összefoglalás a main.cpp-re
+Cél:
+A program célja egy kétkarú inga mozgásának numerikus szimulációja. A rendszer dinamikája nemlineáris másodrendű differenciálegyenletekkel írható le, melyeket analitikusan nem lehet megoldani.
+
+Módszertani választás indoklása:
+A numerikus integráláshoz 4. rendű Runge–Kutta módszert kellett alkalmazni. ( Mert ez stabil és egész pontos eljárás nemlineáris rendszerek esetén, viszonylag alacsony számítási költséggel.)
+
+Fizikai paraméterek:
+A program bemeneti paraméterként várja:
+- L1, L2 – az első és második inga hossza
+- M1, M2 – az első és második tömeg
+- phi1_0, phi2_0 – a két inga kezdeti szöge
+- omega1_0, omega2_0 – a két inga kezdeti szögsebessége
+- T – a szimuláció teljes időtartama
+- h – időlépésköz
+
+Kimenet:
+A szimuláció eredményét CSV fájlba menti (double_pendulum_output.csv), amely tartalmazza az idő függvényében értékeket:
+- idő, x1, y1, x2, y2 – a tömegek pozíciója
+- v1, v2 – sebességek
+- phi1, phi2 – szögek
+- omega1, omega2 – szögsebességek
+
+Függvények és struktúrák:
+- TwoPoints – egy szimulációs állapotot tároló struktúra
+- converter() – az aktuális szögekből és szögsebességekből kiszámítja a pozíciókat és sebességeket
+- do1dt() és do2dt() – a mozgásegyenletek jobb oldalát számítják
+- simulation() – Runge–Kutta integrálással meghívja a fenti függvényeket és eltárolja az eredményt
+- main() – parancssori argumentumokat kezel, indítja a szimulációt, majd fájlba írja az eredményeket
+
