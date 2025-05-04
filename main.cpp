@@ -103,15 +103,9 @@ int main(int argc, char** argv) {
                    << point.phi1 << "," << point.phi2 << ","
                    << point.omega1 << "," << point.omega2 << "\n";
         }
-<<<<<<< HEAD
         std::cout << "Results saved to file: double_pendulum_output.csv\n";
     } else {
         std::cerr << "Failed to open file for writing.\n";
-=======
-        std::cout << "Eredmények elmentve a double_pendulum_output.csv fájlba.\n";
-    } else {
-        std::cerr << "Nem sikerült megnyitni a fájlt írásra.\n";
->>>>>>> 20bb159f3871ee39fd1d2f26a7dd2334f4b1876f
     }
 
     return 0;
