@@ -6,7 +6,6 @@
 #include <sstream>
 #include <cstdlib>
 
-<<<<<<< HEAD
 // Platformfüggő beállítások
 #if defined(_WIN32) || defined(_WIN64)
     #ifndef M_PI
@@ -17,8 +16,6 @@
     #define pclose _pclose
 #endif
 
-=======
->>>>>>> 20bb159f3871ee39fd1d2f26a7dd2334f4b1876f
 const double g = 9.81;
 const double T = 30.0;
 const double h = 0.01;
