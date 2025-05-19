@@ -16,3 +16,8 @@
  remélem nem probléma, szerintem a viridis helyett ilyen pirosas elég ronda lenne
  
  -animációt kivettem (ha jól értettem ezt mondta hogy ez okés)
+
+
+
+-igen nagy a méret..., ez a a 2 nagy grid file "hibája", mivel elvileg leakarhatja ellenőrizni nem törlöm, de alapból nem hagynám benne, igen hosszú idő mire létre jön..., 
+ha ellenőrizni akarja inkább a 100*100-sat ajánlom és a 0.01-s lépésközzel
