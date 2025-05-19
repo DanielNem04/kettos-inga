@@ -1,0 +1,18 @@
+- megpróbáltam összefűzni a fileokat, a megadott projektből részben inspirálódva
+
+- mappákba raktam az anyagokat, program az app mappába ment, de azért hogy a tesztelőt ne zavarja a jegyzőkönyvhöz használt csv és png fileokat a figuresbe raktam
+
+- irodalom a refrences mappába
+
+- lecseréltem a gnuplotot (mármint ahol volt), és azt tényleg köszönöm / tényleg hasznos tanács volt hogy legyen lementve az adat az ábrázolás előtt (elég hosszú a futás idő... nem ajánlom)
+
+-ezel összefüggően felszámoltam a jupyter notebookokat, egyet hagytam csak az ábrázoláshoz, ezt nem akartam részletezni, hiszen csak ábrázolás, annyi csak a játék vele hogy
+ a nem heatmap first-flip timeok esetén (sima 2 diagram 0-0.31, és 0-2pi) pythonban oldottam meg hogy a programot (!!! nem dinamikus könyvtár már!) futtassam, ez eléggé meglassítja, de így átláthatóbb, ez
+ (bár persze ahogy írta is a 0-1000 résznél, hogy ne írjam le a saját hibámat, szóval ezt sem kéne) hogy kevébsé lett optimálisabb / gyorsabb a program, de pontosabb és átláhatóbb
+ (bár valszeg nem érdekli, de fun-fact, vagy hát legalábbis nekem az volt, hogy egy elírás a k3 deklarációban * helyett +, miatt nem tudtam leadni tegnap mert akkor vettem észre amikor már jó sok mindent legeneráltam,
+ tanulsásog a jövőre hogy mindent nézzek át duplán / rendesen, és hogy mindent egyből ábrázoljak, nézzek meg mert ha nem ellenőrzöm részenként kellemetlen lehet a végén rájönni hogy ...)
+ 
+ -elvileg az ábrák stilisztikailag egyformák lettek, r string latex varphi, és () között a mértékegységek, most remélem az hogy a heatmap viridis és a sima ábra meg kék-piros
+ remélem nem probléma, szerintem a viridis helyett ilyen pirosas elég ronda lenne
+ 
+ -animációt kivettem (ha jól értettem ezt mondta hogy ez okés)
